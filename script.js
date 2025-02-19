@@ -107,7 +107,7 @@ function changeImg() {
     if (img2) img2.src = "/image/Group 12.png";
     if (img3) img3.src = "/image/Frame 88.png";
     if (img4) img4.src = "/image/Group 11.png";
-    if (nav) nav.src = "/image/Group 3.png";
+    if (nav) nav.src = "images/nav-photo.png";
     if (foot) foot.src = "/image/footer.0.png";
   }
 }
