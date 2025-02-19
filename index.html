@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDGC MSIT</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<!--     <script>
+      // if (!sessionStorage.getItem("loadingShown")) {
+      //   window.location.href = "Loading.html";
+      // } else {
+      //   sessionStorage.removeItem("loadingShown");
+      // }
+    </script> -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* ----------------------------------------------toggle switch------------------------------------------------------ */
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 4rem;
+        height: 1.75rem;
+        top: 1.8rem;
+        margin: 0 -14px 0 -12px;
+        /* align-content: end; */
+        /* left: -700px; */
+        /* top: 5px; */
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #272525;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 34px;
+        border: 4px solid blue;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: -3px;
+        /* bottom: 0.5px; */
+        top: -3px;
+        background-color: #272525;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 50%;
+        border: 4px solid red;
+        /* border-image: linear-gradient(to right, red, blue, green, yellow) 1; */
+      }
+
+      input:checked + .slider {
+        background-color: #fff;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #fff;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(36px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+
+      /* ----------------------------------------------toggle switch------------------------------------------------------ */
+    </style>
+  </head>
+
+  <body>
+    <!-- <div id="loading-placeholder" ></div> -->
+    <!-- <div id="main-content" > -->
+    <!----------------------------------------------Navbar------------------------------------------------------>
+
+    <div class="header">
+      <nav>
+        <ul>
+          <div class="nav-img">
+            <img id="nav-Img" src="images/nav-photo.png" alt="GDGC" />
+          </div>
+          <li class="hideOnMobile">
+            <a href="#home" class="active">Home</a>
+          </li>
+          <li class="hideOnMobile"><a href="#About">About</a></li>
+          <li class="hideOnMobile"><a href="./indexx.html">Team</a></li>
+          <li class="hideOnMobile"><a href="#events">Events</a></li>
+          <li class="hideOnMobile"><a href="#faq">FAQ</a></li>
+          <li class="hideOnMobile"><a href="#blogs">Blog</a></li>
+          <li class="hideOnMobile">
+            <button id="nav-btn">
+              <a
+                href="https://gdg.community.dev/gdg-on-campus-meghnad-saha-institute-of-technology-kolkata-india/"
+                >Join us</a
+              >
+            </button>
+          </li>
+          <li>
+            <a href="#" id="menubar"><i class="fa-solid fa-bars"></i></a>
+          </li>
+        </ul>
+
+        <ul class="sidebar">
+          <li>
+            <a href="#" id="closeBtn"><i class="fa-solid fa-x"></i></a>
+          </li>
+          <li><a href="/index.html" class="nav-btn">Home</a></li>
+          <li><a href="#About" class="nav-btn">About</a></li>
+          <li><a href="/indexx.html" class="nav-btn">Team</a></li>
+          <li><a href="#events" class="nav-btn">Events</a></li>
+          <li><a href="#faq" class="nav-btn">FAQ</a></li>
+          <li><a href="#blogs" class="nav-btn">Blog</a></li>
+          <li><a href="https://gdg.community.dev/gdg-on-campus-meghnad-saha-institute-of-technology-kolkata-india/" class="nav-btn">Join Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!----------------------------------------------Navbar------------------------------------------------------>
+
+    <!----------------------------------------------Hero Section------------------------------------------------------>
+    <div class="hero-container"  id="home">
+      <img
+        id="logo1"
+        src="image/Group 8.png"
+        alt=""
+        height="225px"
+        width="300px"
+      />
+      <img id="logo2" src="./image/Group 12.png" alt="" />
+      <img id="logo3" src="image/Frame 88.png" alt="" />
+      <img id="logo4" src="image/Group 11.png" alt="" />
+      <img id="logo5" src="image/BG-1.png.svg" width="100%" alt="" />
+      <div class="main">
+        <div class="main-1">
+          <pre>GDGC MSIT</pre>
+          <img src="image/Group (1).png" alt="" />
+        </div>
+        <div class="main-2">
+          <h1>
+            <pre>
+              Join a community of learners,
+                c<div class="toggle-container">
+                  <input type="checkbox" name="checkbox" id="toggle" class="mode-icon" onclick="changeImg()">
+                  <div class="toggle-btn"><label for="toggle" class="toggle"></label></div>
+                  </div>ders, and innovators.
+            </pre>
+          </h1>
+        </div>
+        <div class="hero-btn">
+          <a
+            href="https://gdg.community.dev/gdg-on-campus-meghnad-saha-institute-of-technology-kolkata-india/"
+            ><button id="btn1">Join GDGC</button></a
+          >
+          <a href=""><button id="btn2">Upcoming Events</button></a>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------Hero Section------------------------------------------------------>
+
+    <!----------------------------------------------Number Section------------------------------------------------------>
+    <div class="number">
+      <div class="flex">
+        <div class="num">
+          <h1>1000+</h1>
+        </div>
+        <div class="text">
+          <p>Community Members</p>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="num">
+          <h1>20+</h1>
+        </div>
+        <div class="text">
+          <p>Events Conducted</p>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="num">
+          <h1>30+</h1>
+        </div>
+        <div class="text">
+          <p>Team Members</p>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------Number Section------------------------------------------------------>
+
+    <!----------------------------------------------Ongoing Event Section------------------------------------------------------>
+
+    <div class="ongoing-container" id="ongoing-section">
+      <div>
+        <h1>Ongoing Event</h1>
+      </div>
+      <div class="ongoing-content">
+        <div class="ongoing-image">
+          <img src="image/events/build with AI.jpeg" alt="" />
+        </div>
+        <div class="ongoing-text">
+          <div>
+            <h2>Gen Ai Study Jam</h2>
+          </div>
+          <div>
+            <p>
+              🚀 Get ready to dive into the world of AI! Meghnad Saha Institute of Technology presents an engaging AI Workshop where you’ll learn to build your first AI Agent from scratch! 💻✨
+
+              <br />
+              <br />
+              Space is limited! Only 120 students can join <br />
+              this exclusive adventure
+            </p>
+          </div>
+          <div>
+            <a href="https://gdg.community.dev/events/details/google-gdg-on-campus-meghnad-saha-institute-of-technology-kolkata-india-presents-ai-workshop/">
+              <button id="btn3">RSVP Now</button>
+            </a>
+            <br> <br>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------Ongoing Event Section------------------------------------------------------>
+
+    <!-- ----------------------------------------------About Section------------------------------------------------------ -->
+    <div class="about-container" id="About">
+      <div class="about-text">
+        <div class="about-heading">
+          <h1>What is GDGC?</h1>
+        </div>
+        <div class="about-content">
+          <p>
+            GDGC are campus-based groups specifically designed to support
+            aspiring developers on university campuses to learn and build
+            successfully with Google technologies.
+          </p>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="image/Frame 5.png" width="100%" alt="" />
+      </div>
+    </div>
+    <!-- ----------------------------------------------About Section------------------------------------------------------ -->
+
+    <!----------------------------------------------GDGC MSIT Section------------------------------------------------------>
+
+    <div class="GDGC-container">
+      <div class="Up">
+        <div class="GDGC-Text">
+          <div class="heading">
+            <h1>GDGC MSIT</h1>
+            <img src="image/Frame 6.png" alt="" />
+          </div>
+          <div class="content">
+            <p>
+              GDGC MSIT is a community were you can find all type of talents
+              from developers, designers to writers.
+            </p>
+          </div>
+        </div>
+        <div class="Up-img">
+          <div class="up-img-1">
+            <img src="image/Frame up1.png" width="100%" alt="" />
+          </div>
+          <div class="up-img-2">
+            <img src="image/Frame up2.png" width="100%" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="Down">
+        <div class="down-img1">
+          <img src="image/Frame down1.png" width="100%" alt="" />
+        </div>
+        <div class="down-img2">
+          <img src="image/Frame down2.png" width="100%" alt="" />
+        </div>
+        <div class="down-img3">
+          <img src="image/Frame 760.png" width="100%" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------Blogs Section--------------------------------------------->
+
+    <div class="blog-container" id="blogs">
+      <div class="blog-header">
+        <h1>Blogs</h1>
+        <p>Get latest tech and other info</p>
+      </div>
+
+      <div class="swiper-wrapper">
+        <div class="swiper">
+          <!-- swipe 1 -->
+
+          <div class="swipe">
+            
+            <a
+              href="https://medium.com/@gdgcmsit/tech-winter-break-empowering-gdgc-members-for-solution-challenges-2025-ad377c3b2d14"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <div class="blog-card">
+                <h3>
+                  Tech Winter Break: Empowering GDGC Members for Solution
+                  Challenges 2025
+                </h3>
+                <p>
+                  The Tech Winter Break is an innovative initiative launched by
+                  GDGC India to gear up its members for...
+                </p>
+                <div class="author">
+                  <img src="image/blog logo.jpeg" height="20vh" alt="Author" />
+                  <span>Content Team • Dec 6, 2024</span>
+                </div>
+                <div class="tags">
+                  <span class="tag" style="background-color: #03a9f4;">Solution Challenge 2025</span>
+                  <span class="tag" style="background-color: #8bc34a;">Tech Winter Break</span>
+                  <span class="tag" style="background-color: #ffc107;">Google Technologies</span>
+                </div>
+              </div>
+            </a>
+            <!-- <div class="blog-card">
+            <h3>
+              Unveiling the Power of Serverless Computing: A Dive into AWS
+              Lambda
+            </h3>
+            <p>
+              In the vast landscape of cloud computing, few innovations have
+              sparked as much interest and excitement as serverless comput...
+            </p>
+            <div class="author">
+              <img src="image/avatar.png" alt="Author" />
+              <span>kaustav ray • Apr 29, 2024</span>
+            </div>
+            <div class="tags">
+              <span class="tag ai">AI</span>
+              <span class="tag cloud">Cloud</span>
+              <span class="tag ml">ML</span>
+              <span class="tag design">Design</span>
+            </div>
+          </div>
+          <div class="blog-card">
+            <h3>
+              Unveiling the Power of Serverless Computing: A Dive into AWS
+              Lambda
+            </h3>
+            <p>
+              In the vast landscape of cloud computing, few innovations have
+              sparked as much interest and excitement as serverless comput...
+            </p>
+            <div class="author">
+              <img src="image/avatar.png" alt="Author" />
+              <span>kaustav ray • Apr 29, 2024</span>
+            </div>
+            <div class="tags">
+              <span class="tag ai">AI</span>
+              <span class="tag cloud">Cloud</span>
+              <span class="tag ml">ML</span>
+              <span class="tag design">Design</span>
+            </div>
+          </div> -->
+          </div>
+
+          <!-- swipe 2
+
+
+        <div class="swipe">
+          <div class="blog-card">
+            <h3>
+              Unveiling the Power of Serverless Computing: A Dive into AWS
+              Lambda
+            </h3>
+            <p>
+              In the vast landscape of cloud computing, few innovations have
+              sparked as much interest and excitement as serverless comput...
+            </p>
+            <div class="author">
+              <img src="image/avatar.png" alt="Author" />
+              <span>kaustav ray • Apr 29, 2024</span>
+            </div>
+            <div class="tags">
+              <span class="tag ai">AI</span>
+              <span class="tag cloud">Cloud</span>
+              <span class="tag ml">ML</span>
+              <span class="tag design">Design</span>
+            </div>
+          </div>
+          <div class="blog-card">
+            <h3>
+              Unveiling the Power of Serverless Computing: A Dive into AWS
+              Lambda
+            </h3>
+            <p>
+              In the vast landscape of cloud computing, few innovations have
+              sparked as much interest and excitement as serverless comput...
+            </p>
+            <div class="author">
+              <img src="image/avatar.png" alt="Author" />
+              <span>kaustav ray • Apr 29, 2024</span>
+            </div>
+            <div class="tags">
+              <span class="tag ai">AI</span>
+              <span class="tag cloud">Cloud</span>
+              <span class="tag ml">ML</span>
+              <span class="tag design">Design</span>
+            </div>
+          </div>
+          <div class="blog-card">
+            <h3>
+              Unveiling the Power of Serverless Computing: A Dive into AWS
+              Lambda
+            </h3>
+            <p>
+              In the vast landscape of cloud computing, few innovations have
+              sparked as much interest and excitement as serverless comput...
+            </p>
+            <div class="author">
+              <img src="image/avatar.png" alt="Author" />
+              <span>kaustav ray • Apr 29, 2024</span>
+            </div>
+            <div class="tags">
+              <span class="tag ai">AI</span>
+              <span class="tag cloud">Cloud</span>
+              <span class="tag ml">ML</span>
+              <span class="tag design">Design</span>
+            </div>
+          </div>
+        </div> -->
+        </div>
+
+        <!-- swiper Navigation -->
+
+        <div class="swiper-controls">
+          <button class="prev-btn">&lt;</button>
+          <button class="next-btn">&gt;</button>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------Past Events Section--------------------------------------------->
+    <section class="past-events" id="events">
+      <h2>Past events</h2>
+      <div class="carousel">
+        <div class="carousel-inner"></div>
+        <div class="carousel-controls">
+          <button class="past-events-prev-btn">&#10094;</button>
+          <button class="past-events-next-btn">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------------------FAQ Section--------------------------------------------->
+    <section class="faq" id="faq">
+      <div class="faq-left">
+        <h1 class="faq-left-top">Frequently Asked Questions</h1>
+        <h3 class="faq-left-bottom">Need Answers? Find them here.</h3>
+      </div>
+      <div class="faq-right">
+        <div class="each-faq">
+          <div class="question">
+            <h3>What is GDGC?</h3>
+            <img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/fluency-systems-filled/50/228BE6/plus-math.png"
+              alt="plus-math"
+            />
+          </div>
+          <div class="answer">
+            <p>
+              GDGC stands for Google Developer Group on Campus. It is a
+              university based community group for students who are interested
+              in Google developer technologies. GDGCs are powered by Google
+              Developers and are intended to help students learn and grow as
+              developers
+            </p>
+          </div>
+        </div>
+        <div class="each-faq">
+          <div class="question">
+            <h3>What does GDGC do?</h3>
+            <img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/fluency-systems-filled/50/228BE6/plus-math.png"
+              alt="plus-math"
+            />
+          </div>
+          <div class="answer">
+            <p>
+              GDGC help solve the problems faced by people in everyday lives through the aid of technology, we make innovative software solutions to the issues and also help in upskilling the developer community in colleges through sessions and workshops.
+            </p>
+          </div>
+        </div>
+
+        <div class="each-faq">
+          <div class="question">
+            <h3>Who can be a member of GDGC MSIT?</h3>
+            <img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/fluency-systems-filled/50/228BE6/plus-math.png"
+              alt="plus-math"
+            />
+          </div>
+          <div class="answer">
+            <p>
+              GDGC members are usually 2nd year & 3rd year students of the college. The 2nd years comprise the junior team and 3rd-year members comprise the core team of GDGC.
+            </p>
+          </div>
+        </div>
+
+        <div class="each-faq">
+          <div class="question">
+            <h3>What are the perks of being in GDGC?</h3>
+            <img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/fluency-systems-filled/50/228BE6/plus-math.png"
+              alt="plus-math"
+            />
+          </div>
+          <div class="answer">
+            <p>
+              As a GDGC member, you join a prestigious global developer community, work on projects that address real-world issues, and continuously enhance your skills with the support of a motivated peer group.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="footer">
+        <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-pic">
+            <img src="images/footer-pic.png" alt="gdgc">
+        </div>
+    </div> -->
+
+    <div class="footer">
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/GDSCMSITKol"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://x.com/gdg_msit"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/gdgc_msit/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/google-developer-group-on-campus-msit/posts/?feedView=all"><i class="fa-brands fa-linkedin"></i></a>
+        <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
+      </div>
+      <div class="footer-pic">
+        <img id="foot" src="/image/footer.0.png" alt="gdgc" />
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
